@@ -10,7 +10,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= stylesheet_link_tag "all" %>
+    <%= stylesheet_link_tag "bootstrap.min" %>
   </head>
   <body class="<%= page_classes %>">
 
@@ -21,7 +22,8 @@
     <%= partial "footer" %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag "bootstrap.min" %>
+    <%= javascript_include_tag "all" %>
 
     <script>
     (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
