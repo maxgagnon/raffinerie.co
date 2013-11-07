@@ -1,7 +1,9 @@
 @charset "utf-8";
 
-#header {
+$yellow: #FFF200;
 
+#header {
+  background-color: $yellow;
 }
 
 #navigation {
