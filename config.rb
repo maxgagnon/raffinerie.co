@@ -31,6 +31,7 @@
 sprockets.append_path File.join("#{root}", "bower_components")
 
 activate :directory_indexes
+activate :gzip
 
 page "/projects/*", layout: :project
 
