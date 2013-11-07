@@ -3,50 +3,63 @@ title: La Raffinerie
 ---
 
 <div class="row" id="axioms">
-  <div class="col-md-4">
-    <h1>Publicitaire</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam cumque expedita repudiandae. </p>
-  </div>
-  <div class="col-md-4">
-    <h1>Corporatif</h1>
-    <p>Lorem ipsum dolor sit amet, elit. Autem, laboriosam cumque expedita repudiandae. </p>
-  </div>
-  <div class="col-md-4">
-    <h1>Action</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam expedita repudiandae. </p>
+  <div class="container">
+
+    <div class="col-md-4">
+      <h1>Publicitaire</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam cumque expedita repudiandae. </p>
+    </div>
+    <div class="col-md-4">
+      <h1>Corporatif</h1>
+      <p>Lorem ipsum dolor sit amet, elit. Autem, laboriosam cumque expedita repudiandae. </p>
+    </div>
+    <div class="col-md-4">
+      <h1>Action</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam expedita repudiandae. </p>
+    </div>
+
   </div>
 </div>
 
 <div class="row" id="projects">
-  <div class="col-md-4">
-    <h3>Projects</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque sed repellendus minima eveniet sapiente quasi! Amet, earum, in, doloribus porro.</p>
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
-  </div>
-  <div class="col-md-4"></div>
-  <div class="col-md-4">
-    <img src="http://placehold.it/360x200" alt="">
+  <div class="container">
+
+    <% data.projects.each do |name, attributes| %>
+      <%= name %>
+      <%= attributes %>
+    <% end %>
+
+    <div class="col-md-4">
+      <h3>Projects</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque sed repellendus minima eveniet sapiente quasi! Amet, earum, in, doloribus porro.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <img src="http://placehold.it/360x200" alt="">
+    </div>
+
   </div>
 </div>
