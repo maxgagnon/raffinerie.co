@@ -34,6 +34,15 @@ activate :directory_indexes
 activate :gzip
 
 page "/projects/*", layout: :project
+# Plugins settings
+activate :imageoptim do |options|
+  # print out skipped images
+  options.verbose = true
+
+  # Image extensions to attempt to compress
+  options.image_extensions = %w(.png .jpg .gif)
+end
+
 
 ###
 # Helpers
