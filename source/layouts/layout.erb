@@ -15,11 +15,12 @@
   </head>
   <body class="<%= page_classes %>">
 
-    <%= partial "header" %>
+    <%= partial "localizable/header" %>
 
     <%= yield %>
 
-    <%= partial "footer" %>
+    <%= partial "localizable/contact" %>
+    <%= partial "localizable/footer" %>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <%= javascript_include_tag "bootstrap.min" %>
