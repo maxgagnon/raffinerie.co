@@ -1,0 +1,26 @@
+---
+fr:
+  header:
+    navigation:
+      brand: La Raffinerie
+      company: Compagnie
+      projects: Projets
+      contact: Contact
+      reel: Reel
+  masthead:
+    copy: Lorem ipsum dolor sit amet, consectetur adipisicing atque voluptatibus delectus in omnis vero.
+  axioms:
+    advertising:
+      title: Publicitaire
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam cumque expedita repudiandae.
+    corporate:
+      title: Corporatif
+      description: Lorem ipsum dolor sit amet, elit. Autem, laboriosam cumque expedita repudiandae.
+    action:
+      title: Action
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam expedita repudiandae.
+  projects:
+  contact:
+  footer:
+    company: La Raffinerie
+    all_rights_reserved: Tous droits réservés
