@@ -18,6 +18,13 @@ $yellow: #FFF200;
 
 }
 
-#footer {
 
+// Footer
+// -------------------------------------------
+
+#footer {
+  padding-top: $grid-gutter-width * 2;
+  padding-bottom: $grid-gutter-width * 4;
+  background-color: gray;
+  text-align: center;
 }
