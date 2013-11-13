@@ -7,7 +7,6 @@
 
 #header {}
 
-#axioms {
 .navbar-transparent {
   background: none;
   border: none;
@@ -37,7 +36,33 @@
   text-transform: uppercase;
 }
 
+
+// Axioms
+// -------------------------------------------
+
+#company {
+  padding-top: $grid-gutter-width * 4;
+  padding-bottom: $grid-gutter-width * 4;
+  background-color: $brand-primary;
 }
+
+#axiom-advertising {
+  background: url(http://placehold.it/100) no-repeat center;
+}
+#axiom-corporate {
+  background: url(http://placehold.it/100) no-repeat center;
+}
+#axiom-action {
+  background: url(http://placehold.it/100) no-repeat center;
+}
+
+.axiom {}
+.axiom-title {
+  text-transform: uppercase;
+}
+.axiom-description {}
+
+
 // Projects
 // -------------------------------------------
 
