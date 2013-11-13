@@ -13,8 +13,55 @@ $yellow: #FFF200;
 #axioms {
 
 }
+// Projects
+// -------------------------------------------
 
 #projects {
+  padding-top: $grid-gutter-width * 4;
+  padding-bottom: $grid-gutter-width * 4;
+}
+
+.project {
+  min-height: 205px;
+  margin-bottom: $grid-gutter-width;
+
+  .thumbnail {
+    margin-bottom: 0;
+    border: none;
+    box-shadow: none;
+    transition: none;
+
+    .label {
+      position: absolute;
+      top: -5px;
+      right: 20px;
+      padding: 1.2em 1.6em 1.3em;
+      background-color: $text-color;
+      border-radius: 0;
+      text-transform: uppercase;
+    }
+    .caption {
+      position: absolute;
+      top: 0;
+      padding-right: $grid-gutter-width;
+      opacity: 0;
+    }
+
+    &:hover {
+      background-color: $brand-primary;
+      img {
+        opacity: 0;
+      }
+      .caption {
+        opacity: 1;
+      }
+    }
+  }
+}
+.project-title {}
+.project-description {}
+
+
 
 }
 
