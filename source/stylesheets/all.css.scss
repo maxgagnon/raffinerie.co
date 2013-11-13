@@ -112,7 +112,30 @@
 .project-description {}
 
 
+// Contact
+// -------------------------------------------
 
+#contact {
+  padding-top: $grid-gutter-width * 2;
+  padding-bottom: $grid-gutter-width * 2;
+  background-color: #eee;
+}
+
+#contact-infos, #contact-social {
+  margin-top: $line-height-computed;
+}
+
+.contact-info > a {
+  color: $text-color;
+}
+
+.contact-icon > a {
+  font-size: $font-size-h2;
+  color: $text-color;
+  &:hover, &:focus {
+    color: $brand-primary;
+    text-decoration: none;
+  }
 }
 
 
