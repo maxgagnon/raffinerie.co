@@ -23,6 +23,20 @@
 }
 
 
+// Masthead
+// -------------------------------------------
+
+#masthead {
+  padding-top: $grid-gutter-width * 8;
+  padding-bottom: $grid-gutter-width * 8;
+  background: #000 no-repeat center;
+}
+
+.masthead-copy {
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
 }
 // Projects
 // -------------------------------------------
