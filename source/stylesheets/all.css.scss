@@ -46,21 +46,18 @@
   background-color: $brand-primary;
 }
 
-#axiom-advertising {
-  background: url(http://placehold.it/100) no-repeat center;
+.axiom {
+  padding: $grid-gutter-width * 2 0;
+  background: no-repeat top center;
 }
-#axiom-corporate {
-  background: url(http://placehold.it/100) no-repeat center;
-}
-#axiom-action {
-  background: url(http://placehold.it/100) no-repeat center;
-}
-
-.axiom {}
 .axiom-title {
   text-transform: uppercase;
 }
 .axiom-description {}
+
+#axiom-advertising { background-image: url(../images/axiom-advertising.png); }
+#axiom-corporate { background-image: url(../images/axiom-corporate.png); }
+#axiom-action { background-image: url(../images/axiom-action.png); }
 
 
 // Projects
