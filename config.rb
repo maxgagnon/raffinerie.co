@@ -33,8 +33,6 @@ activate :directory_indexes
 activate :gzip
 activate :i18n
 
-sprockets.append_path File.join("#{root}", "bower_components")
-
 # Plugins settings
 activate :imageoptim do |options|
   # print out skipped images
