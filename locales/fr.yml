@@ -12,13 +12,13 @@ fr:
   company:
     advertising:
       title: Publicitaire
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam cumque expedita repudiandae.
+      description: "Que ce soit par le biais d'une agence ou directement du client, nous sommes en mesure d'offrir un produit actuel et créatif qui répond à tous les critères demandés."
     corporate:
       title: Corporatif
-      description: Lorem ipsum dolor sit amet, elit. Autem, laboriosam cumque expedita repudiandae.
+      description: "De la définition du besoin jusqu'à la diffusion du produit, nous accompagnons le client en le dirigeant le plus précisément possible vers une solution optimale."
     action:
       title: Action
-      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam expedita repudiandae.
+      description: "Peu importe le délai imposé, nous sommes en mesure de capturer, monter et diffuser du visuel et ce, sur place dans le feu de l'action."
   projects:
   contact:
   footer:
