@@ -37,12 +37,15 @@ activate :gzip
 activate :i18n
 
 # Plugins settings
-activate :imageoptim do |options|
+activate :imageoptim do |imageoptim|
   # print out skipped images
-  options.verbose = true
+  imageoptim.verbose = true
+
+  # Disable pngout
+  imageoptim.pngout_options = false
 
   # Image extensions to attempt to compress
-  options.image_extensions = %w(.png .jpg .gif)
+  imageoptim.image_extensions = %w(.png .jpg .gif)
 end
 
 activate :sync do |sync|
