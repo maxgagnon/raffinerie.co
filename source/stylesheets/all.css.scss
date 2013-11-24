@@ -76,12 +76,12 @@
 
 #company {
   padding-top: $grid-gutter-width * 4;
-  padding-bottom: $grid-gutter-width * 4;
+  padding-bottom: $grid-gutter-width * 5;
   background-color: $brand-primary;
 }
 
 .axiom {
-  padding: $grid-gutter-width * 2 0;
+  padding-top: $grid-gutter-width * 2;
   background: no-repeat top center;
 }
 .axiom-title {
@@ -107,6 +107,7 @@
   margin-bottom: $grid-gutter-width;
 
   .thumbnail {
+    padding: 0;
     margin-bottom: 0;
     border: none;
     box-shadow: none;
@@ -114,8 +115,8 @@
 
     .label {
       position: absolute;
-      top: -5px;
-      right: 20px;
+      top: -10px;
+      right: 5px;
       padding: 1.2em 1.6em 1.3em;
       background-color: $text-color;
       border-radius: 0;
@@ -175,7 +176,7 @@
 
 #footer {
   padding-top: $grid-gutter-width * 2;
-  padding-bottom: $grid-gutter-width * 4;
-  background-color: gray;
+  padding-bottom: $grid-gutter-width * 6;
+  background-color: #DCDCDC;
   text-align: center;
 }
