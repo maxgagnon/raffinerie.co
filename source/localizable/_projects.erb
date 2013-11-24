@@ -1,118 +1,53 @@
 <section id="projects">
   <div class="container">
 
-    <div class="row">
-      <% data.projects.each do |name, attributes| %>
-        <%= name %>
-        <%= attributes %>
-      <% end %>
+    <% elements = [] %>
+    <% elements += data.projects.map { |k, v| v.merge(type: :project) } %>
+    <% elements += data.quotes.map { |k, v| v.merge(type: :quote) } %>
+    <% elements.shuffle! %>
 
+    <% elements.insert([3, 4].sample, Hash.new) %>
+    <% elements.insert([6, 7].sample, Hash.new) %>
+
+    <div class="row">
       <div class="col-md-4 project">
         <h3>Projects</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium neque sed repellendus minima eveniet sapiente quasi! Amet, earum, in, doloribus porro.</p>
       </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <span class="label label-default">Nouveau</span>
-            <img src="http://placehold.it/360x200" alt="">
 
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
+      <% elements.each do |element| %>
+        <% if element.blank? %>
+          <div class="col-md-4 project"></div>
+
+        <% elsif element[:type] == :quote %>
+        <div class="col-md-4 quote">
+          <blockquote>
+            <p><%= element.text %></p>
+            <small><%= element.author %></small>
+          </blockquote>
+        </div>
+
+        <% elsif element[:type] == :project %>
+          <div class="col-md-4 project">
+            <a href="/projects/project">
+              <div class="thumbnail">
+                <% if element[:new] %>
+                  <span class="label label-default">Nouveau</span>
+                <% end %>
+
+                <%= image_tag(element.thumbnail.url, alt: element.thumbnail.title) %>
+
+                <div class="caption">
+                  <h5><%= element.title %></h5>
+                  <p><%= element.short_description %></p>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project"></div>
-      <div class="col-md-4 project"></div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-md-4 project"></div>
-      <div class="col-md-4 project">
-        <a href="">
-          <div class="thumbnail">
-            <img src="http://placehold.it/360x200" alt="">
-
-            <div class="caption">
-              <h5>Titre</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, repudiandae, veritatis.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
+        <% else %>
+        <% end %>
+      <% end %>
+    </div><!-- /.row -->
 
   </div>
 </section>
