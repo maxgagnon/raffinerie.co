@@ -33,7 +33,6 @@ Dotenv.load
 
 # Settings
 activate :directory_indexes
-activate :gzip
 activate :i18n, mount_at_root: :fr
 
 # Plugins settings
