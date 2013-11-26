@@ -4,8 +4,11 @@ fr:
     navigation:
       brand: La Raffinerie
       company: Compagnie
+      company_fragment: compagnie
       projects: Projets
+      projects_fragment: projets
       contact: Contact
+      contact_fragment: contact
       reel: Reel
   masthead:
     copy: "Spécialisée dans le processus d’épuration d’idée."

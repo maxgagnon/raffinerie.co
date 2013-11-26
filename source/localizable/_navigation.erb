@@ -5,10 +5,18 @@
     </div>
 
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#compagnie"><%= t('header.navigation.company') %></a></li>
-      <li><a href="#projets"><%= t('header.navigation.projects') %></a></li>
-      <li><a href="#contact"><%= t('header.navigation.contact') %></a></li>
-      <li><a href="#"><%= t('header.navigation.reel') %></a></li>
+      <li>
+        <%= link_to t('header.navigation.company'), '/', fragment: t('header.navigation.company_fragment') %>
+      </li>
+      <li>
+        <%= link_to t('header.navigation.projects'), '/', fragment: t('header.navigation.projects_fragment') %>
+      </li>
+      <li>
+        <%= link_to t('header.navigation.contact'), '/', fragment: t('header.navigation.contact_fragment') %>
+      </li>
+      <li>
+        <%= link_to t('header.navigation.reel'), '/' %>
+      </li>
     </ul>
   </div>
 </div>
