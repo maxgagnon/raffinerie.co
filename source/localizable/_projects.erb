@@ -2,8 +2,8 @@
   <div class="container">
 
     <% elements = [] %>
-    <% elements += data.projects.map { |k, v| v.merge(type: :project) } %>
-    <% elements += data.quotes.map { |k, v| v.merge(type: :quote) } %>
+    <% elements += data.projects.map { |k, v| v.merge({ type: :project, slug: k }) } %>
+    <% elements += data.quotes.map { |k, v| v.merge({ type: :quote }) } %>
     <% elements.shuffle! %>
 
     <% elements.insert([3, 4].sample, Hash.new) %>
@@ -29,7 +29,7 @@
 
         <% elsif element[:type] == :project %>
           <div class="col-md-4 project">
-            <a href="/projects/project">
+            <a href="/projets/<%= slugify(element[:slug]) %>">
               <div class="thumbnail">
                 <% if element[:new] %>
                   <span class="label label-default">Nouveau</span>

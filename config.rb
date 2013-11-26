@@ -70,14 +70,16 @@ end
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def slugify(string)
+    string.dasherize
+  end
+end
 
 # Routes
-page "/projects/*", layout: :project
+data.projects.keys.each do |slug|
+  proxy("/projets/#{slugify(slug)}.html", "/projects/template.html", locals: { project: data.projects[slug] }, ignore: true)
+end
 
 set :css_dir, 'stylesheets'
 
