@@ -18,7 +18,7 @@ function parallax() {
 
 function navigation() {
   var scrolled = $(window).scrollTop();
-  var breakpoint = $('#masthead').outerHeight() - $('#header .navbar').height();
+  var breakpoint = $('.js-trigger-navigation').outerHeight() - $('#header .navbar').height();
 
   $('.navbar-transparent').toggleClass('navbar-light', (scrolled > breakpoint));
 }
