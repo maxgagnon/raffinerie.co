@@ -1,5 +1,9 @@
 //= require_tree .
 
+$(document).ready(function(){
+  $("#project-media .media").fitVids();
+});
+
 $(window).on('scroll', function(e) {
   parallax();
   navigation();
