@@ -3,12 +3,12 @@ title: Poka
 short_description: "Teaser pour application iPad destiné au secteur manufacturier"
 description: "Poka est un “startup” québécois qui vise à optimiser la rétention de l'information à l'intérieur d'entreprises manufacturières grâce à une application sur plateforme iPad. Les développeurs de l'application nous ont donné le défi d'introduire l'application à l'aide d'un court métrage qui dégage de fortes émotions. Nous en sommes venus au concept d'un employé qui quitte pour la retraite afin d'illustrer le principe de rétention du savoir qu'il a acquis lors de sa carrière."
 thumbnail:
-  url: http://placehold.it/360x200
+  url: images/projects/thumbnail-poka.jpg
   title: Poka
 video:
   id: 77066279
   title: Poka
 main_image:
-  url: http://placehold.it/800x500
+  url: images/projects/poka.jpg
   title: Poka
 images:

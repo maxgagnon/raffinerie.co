@@ -3,12 +3,12 @@ title: CNDF
 short_description: "Campagne promotionnelle du Collège Notre Dame de Foy"
 description: "L'agence Parallèle a eu le mandat de refaire toute la campagne promotionnelle du Collège Notre Dame de Foy. L'agence nous a donc demandé de produire un court clip de 15 secondes destiné à la télé, aux cinémas et aux réseaux sociaux. Le but était de créer une ambiance mystérieuse autour du collège, tout en conservant l'image développée par l'agence."
 thumbnail:
-  url: http://placehold.it/360x200
+  url: images/projects/thumbnail-cndf.jpg
   title: CNDF
 video:
   id: 72981478
   title: CNDF
 main_image:
-  url: http://placehold.it/800x500
+  url: images/projects/cndf.jpg
   title: CNDF
 images:
