@@ -29,7 +29,7 @@
 
         <% elsif element[:type] == :project %>
           <div class="col-md-4 project">
-            <a href="/projets/<%= slugify(element[:slug]) %>">
+            <% link_to "projets/#{slugify(element[:slug])}" do %>
               <div class="thumbnail">
                 <% if element[:new] %>
                   <span class="label label-default">Nouveau</span>
@@ -42,7 +42,7 @@
                   <p><%= element.short_description %></p>
                 </div>
               </div>
-            </a>
+            <% end %>
           </div>
         <% else %>
         <% end %>
