@@ -24,6 +24,10 @@
     padding-bottom: 20px;
     text-indent: -9999px;
     background: url(../images/logo.png) no-repeat center;
+
+    @media (max-width: $screen-md-max) {
+      margin-left: $grid-gutter-width / 2;
+    }
   }
 
   .navbar-nav > li > a {
@@ -63,11 +67,20 @@
   padding-top: $grid-gutter-width * 8;
   padding-bottom: $grid-gutter-width * 8;
   background: url(../images/masthead.jpg) no-repeat;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 5;
+    padding-bottom: $grid-gutter-width * 5;
+  }
 }
 
 .masthead-copy {
   color: #FFFFFF;
   text-transform: uppercase;
+
+  @media (max-width: $screen-sm-max) {
+    font-size: 32px;
+  }
 }
 
 
@@ -78,11 +91,20 @@
   padding-top: $grid-gutter-width * 4;
   padding-bottom: $grid-gutter-width * 5;
   background-color: $brand-primary;
+
+  @media (max-width: $screen-sm-max) {
+    padding-bottom: $grid-gutter-width * 1;
+  }
 }
 
 .axiom {
   padding-top: $grid-gutter-width * 2;
   background: no-repeat top center;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 3;
+    margin-bottom: $grid-gutter-width * 2;
+  }
 }
 .axiom-title {
   text-transform: uppercase;
@@ -100,6 +122,11 @@
 #projects, #projets {
   padding-top: $grid-gutter-width * 4;
   padding-bottom: $grid-gutter-width * 4;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 1;
+    padding-bottom: $grid-gutter-width * 1;
+  }
 }
 
 .project {
@@ -139,6 +166,10 @@
       }
     }
   }
+
+  @media (max-width: $screen-sm-max) {
+    min-height: 0;
+  }
 }
 .project-title {}
 .project-description {}
@@ -147,6 +178,11 @@
   padding-top: $grid-gutter-width * 8;
   padding-bottom: $grid-gutter-width * 8;
   background: url(../images/masthead.jpg) no-repeat;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 5;
+    padding-bottom: $grid-gutter-width * 4;
+  }
 }
 
 .projecthead-copy {
@@ -160,15 +196,28 @@
   padding-bottom: $grid-gutter-width * 4;
   background-color: $brand-primary;
 
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 2;
+    padding-bottom: $grid-gutter-width * 2;
+  }
+
   p {
     @include body-text;
     font-size: $font-size-h3;
+
+    @media (max-width: $screen-sm-max) {
+      font-size: $font-size-h4;
+    }
   }
 }
 
 #project-media {
   padding-top: $grid-gutter-width * 4;
   padding-bottom: $grid-gutter-width * 2;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 2;
+  }
 }
 
 #project-making-of {
@@ -185,6 +234,12 @@
   padding-top: $grid-gutter-width * 2;
   padding-bottom: $grid-gutter-width * 2;
   background-color: #eee;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 1;
+    padding-bottom: $grid-gutter-width * 1;
+    text-align: center;
+  }
 }
 
 #contact-infos, #contact-social {
@@ -213,4 +268,9 @@
   padding-bottom: $grid-gutter-width * 6;
   background: #DCDCDC url(../images/bg-footer.png) no-repeat bottom;
   text-align: center;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 1;
+    padding-bottom: $grid-gutter-width * 1;
+  }
 }
