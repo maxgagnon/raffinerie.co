@@ -36,17 +36,6 @@ activate :directory_indexes
 activate :i18n, mount_at_root: :fr
 
 # Plugins settings
-activate :imageoptim do |imageoptim|
-  # print out skipped images
-  imageoptim.verbose = true
-
-  # Disable pngout
-  imageoptim.pngout_options = false
-
-  # Image extensions to attempt to compress
-  imageoptim.image_extensions = %w(.png .jpg .gif)
-end
-
 activate :sync do |sync|
   sync.fog_provider          = 'AWS'                 # Your storage provider
   sync.fog_directory         = ENV['AWS_BUCKET']     # Your bucket name
