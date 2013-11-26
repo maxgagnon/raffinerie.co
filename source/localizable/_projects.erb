@@ -2,8 +2,8 @@
   <div class="container">
 
     <% elements = [] %>
-    <% elements += data.projects.map { |k, v| v.merge({ type: :project, slug: k }) } %>
-    <% elements += data.quotes.map { |k, v| v.merge({ type: :quote }) } %>
+    <% elements += data[:projects] ? data.projects.map { |k, v| v.merge({ type: :project, slug: k }) } : [] %>
+    <% elements += data[:quotes] ? data.quotes.map { |k, v| v.merge({ type: :quote }) } : [] %>
     <% elements.shuffle! %>
 
     <% elements.insert([3, 4].sample, Hash.new) %>
