@@ -20,6 +20,8 @@ en:
       title: Action
       description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, laboriosam expedita repudiandae.
   projects:
+    title: Projects
+    copy: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, itaque, vero minima corporis maiores suscipit quos sint perferendis incidunt eaque odit mollitia sapiente distinctio in recusandae vitae molestiae repellendus harum."
   contact:
   footer:
     company: La Raffinerie
