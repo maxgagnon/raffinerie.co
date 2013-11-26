@@ -143,6 +143,40 @@
 .project-title {}
 .project-description {}
 
+#projecthead {
+  padding-top: $grid-gutter-width * 8;
+  padding-bottom: $grid-gutter-width * 8;
+  background: url(../images/masthead.jpg) no-repeat;
+}
+
+.projecthead-copy {
+  font-size: $font-size-h1 * 2;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+#project-brief {
+  padding-top: $grid-gutter-width * 4;
+  padding-bottom: $grid-gutter-width * 4;
+  background-color: $brand-primary;
+
+  p {
+    @include body-text;
+    font-size: $font-size-h3;
+  }
+}
+
+#project-media {
+  padding-top: $grid-gutter-width * 4;
+  padding-bottom: $grid-gutter-width * 2;
+}
+
+#project-making-of {
+  padding-top: $grid-gutter-width * 2;
+  padding-bottom: $grid-gutter-width * 4;
+}
+
+
 
 // Contact
 // -------------------------------------------
