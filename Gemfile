@@ -9,4 +9,5 @@ gem 'middleman-sync'
 gem 'dotenv'
 gem 'bootstrap-sass', :require => false
 
+gem 'pry'
 gem 'awesome_print'
