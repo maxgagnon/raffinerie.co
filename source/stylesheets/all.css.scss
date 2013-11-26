@@ -252,7 +252,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#contact-infos, #contact-social {
+#contact-social, .contact-info {
   margin-top: $line-height-computed;
 }
 
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.contact-info > a {
+.contact-info a {
   color: $text-color;
 }
 
