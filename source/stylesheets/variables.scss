@@ -39,7 +39,7 @@ $brand-primary:           #FFF200; // #428bca
 // Typography
 // -------------------------
 
-//$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:    "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 //$font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
 //$font-family-base:        $font-family-sans-serif;
@@ -59,7 +59,7 @@ $brand-primary:           #FFF200; // #428bca
 //$line-height-computed:    floor($font-size-base * $line-height-base); // ~20px
 
 //$headings-font-family:    $font-family-base;
-//$headings-font-weight:    500;
+$headings-font-weight:      900;
 //$headings-line-height:    1.1;
 //$headings-color:          inherit;
 
