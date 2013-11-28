@@ -1,5 +1,8 @@
 ---
 en:
+  pagination:
+    previous: Previous
+    next: Next
   header:
     navigation:
       brand: La Raffinerie

@@ -278,6 +278,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+// Pagination
+// -------------------------------------------
+
+.pager {
+  li > a {
+    @include body-text;
+    color: $text-color;
+    font-size: $font-size-base;
+    border: none;
+
+    &:hover, &:focus {
+      text-decoration: underline;
+      background: transparent;
+    }
+  }
+}
+
+
 // Footer
 // -------------------------------------------
 
