@@ -82,7 +82,7 @@ configure :build do
   activate :minify_css
 
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash, ignore: /facebook-icon/
 
   # Use relative URLs
   # activate :relative_assets
