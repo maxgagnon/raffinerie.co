@@ -99,6 +99,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.masthead-play {
+  margin-top: $grid-gutter-width;
+  color: $brand-primary;
+  font-size: $font-size-h1;
+  text-align: center;
+
+  a {
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
 
 // Axioms
 // -------------------------------------------
