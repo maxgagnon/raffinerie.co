@@ -25,7 +25,6 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   box-shadow: none;
   transition: all 0.2s ease;
-  color: #FFFFFF;
   background: rgba(0, 0, 0, 0.6);
 
   .navbar-brand {
@@ -45,6 +44,8 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 25px;
     padding-bottom: 20px;
     text-shadow: none;
+    color: #FFFFFF;
+    outline: 0;
     @include body-text;
 
     &:hover, &:focus {
@@ -55,7 +56,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-light {
-  color: $text-color;
   background: #FFFFFF;
 
   .navbar-brand {
@@ -63,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .navbar-nav > li > a {
+    color: $text-color;
     &:hover, &:focus {
       color: #000000;
       background-color: $brand-primary;
@@ -76,8 +77,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #masthead {
   padding-top: $grid-gutter-width * 10;
-  padding-bottom: $grid-gutter-width * 10;
-  background: url(../images/masthead.jpg) no-repeat;
+  padding-bottom: $grid-gutter-width * 8;
+  background: #111111 url(../images/masthead.jpg) no-repeat;
 
   @media (max-width: $screen-lg + 400px) {
     padding-top: $grid-gutter-width * 8;
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
   @media (max-width: $screen-sm-max) {
     padding-top: $grid-gutter-width * 4;
-    padding-bottom: $grid-gutter-width * 4;
+    padding-bottom: $grid-gutter-width * 2;
   }
 }
 
@@ -100,12 +101,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead-play {
-  margin-top: $grid-gutter-width;
+  margin-top: $grid-gutter-width * 2;
   color: $brand-primary;
-  font-size: $font-size-h1;
+  font-size: $font-size-h1 * 2;
   text-align: center;
 
   a {
+    outline: 0;
     &:hover, &:focus {
       text-decoration: none;
     }
@@ -149,7 +151,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #company, #compagnie {
   padding-top: $grid-gutter-width * 4;
-  padding-bottom: $grid-gutter-width * 5;
+  padding-bottom: $grid-gutter-width * 4;
   background-color: $brand-primary;
 
   @media (max-width: $screen-lg + 400px) {
@@ -179,7 +181,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: $font-size-large;
   }
 }
-.axiom-title {}
 .axiom-description {
   @include body-text;
   font-size: $font-size-large;
@@ -226,7 +227,8 @@ h1, h2, h3, h4, h5, h6 {
     .caption {
       position: absolute;
       top: 0;
-      padding-right: $grid-gutter-width;
+      padding-left: $grid-gutter-width / 2;
+      padding-right: $grid-gutter-width * 3;
       opacity: 0;
       @include body-text;
     }
@@ -339,7 +341,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: $font-size-h2;
   color: $text-color;
   &:hover, &:focus {
-    color: $brand-primary;
+    color: lighten($text-color, 35%);
     text-decoration: none;
   }
 }
