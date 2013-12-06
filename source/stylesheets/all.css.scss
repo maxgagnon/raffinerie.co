@@ -249,6 +249,29 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.quote {
+  margin-bottom: $grid-gutter-width;
+
+  blockquote {
+    height: 200px;
+    margin: 0;
+    padding: $grid-gutter-width;
+    background-color: #DCDCDC;
+    border-left: 0;
+
+    p {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    small {
+      @include body-text;
+      font-size: $font-size-small;
+      text-align: right;
+    }
+  }
+}
+
+
 #projecthead {
   padding-top: $grid-gutter-width * 8;
   padding-bottom: $grid-gutter-width * 8;
