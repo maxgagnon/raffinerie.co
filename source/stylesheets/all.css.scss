@@ -112,6 +112,37 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.modal-dialog {
+  width: 50%;
+  padding-top: $grid-gutter-width * 2;
+
+  @media (max-width: $screen-sm-max) {
+    padding-top: $grid-gutter-width * 4;
+    width: 90%;
+  }
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  @include box-shadow(none);
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.close {
+  outline: 0;
+  opacity: 0.8;
+  color: $brand-primary;
+  font-size: $font-size-h2;
+
+  &:hover {
+    color: $brand-primary;
+  }
+}
+
 
 // Axioms
 // -------------------------------------------
