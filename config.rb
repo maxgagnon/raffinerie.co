@@ -47,6 +47,10 @@ activate :sync do |sync|
   sync.after_build           = true                  # Disable sync to run after Middleman build ( defaults to true )
 end
 
+# Workaround for bucket names with dots, see https://github.com/fog/fog/issues/2357
+::Fog.credentials = { path_style: true }
+
+
 ###
 # Helpers
 ###
