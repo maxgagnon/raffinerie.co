@@ -5,7 +5,7 @@
     <% elements += data[:projects] ? data.projects.map { |k, v| v.merge({ type: :project, slug: k }) } : [] %>
     <% elements += data[:quotes] ? data.quotes.map { |k, v| v.merge({ type: :quote }) } : [] %>
     <% elements.keep_if { |e| e.published } %>
-    <% elements.shuffle! %>
+    <% elements.sort! { |a, b| (Date.parse(a['created_at']) < Date.parse(b['created_at'])) ? 1 : -1 } %>
 
     <%# elements.insert([3, 4].sample, Hash.new) %>
     <%# elements.insert([6, 7].sample, Hash.new) %>
