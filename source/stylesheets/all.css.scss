@@ -90,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: $grid-gutter-width * 10;
   padding-bottom: $grid-gutter-width * 8;
   background: #111111 url(../images/masthead.jpg) no-repeat;
+  background-size: 1920px 960px; // Fix for retina
 
   @media (max-width: $screen-lg + 400px) {
     padding-top: $grid-gutter-width * 8;
