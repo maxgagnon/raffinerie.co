@@ -10,6 +10,8 @@ fr:
       company_fragment: compagnie
       projects: Projets
       projects_fragment: projets
+      directors: Réalisateurs
+      directors_fragment: realisateurs
       contact: Contact
       contact_fragment: contact
       reel: Reel
@@ -28,6 +30,9 @@ fr:
   projects:
     title: Projets
     copy: "Quelques-unes de nos dernières créations réalisées pour des clients qui ont sollicité la collaboration de La Raffinerie pour leurs différents projets de création vidéos."
+  directors:
+    title: Réalisateurs
+    copy:
   contact:
   footer:
     company: La Raffinerie

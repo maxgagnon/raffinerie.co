@@ -7,8 +7,13 @@ en:
     navigation:
       brand: La Raffinerie
       company: Company
+      company_fragment: company
       projects: Projects
+      projects_fragment: projects
+      directors: Directors
+      directors_fragment: directors
       contact: Contact
+      contact_fragment: contact
       reel: Reel
   masthead:
     copy: Lorem ipsum dolor sit amet, consectetur adipisicing atque voluptatibus delectus in omnis vero.
@@ -25,6 +30,9 @@ en:
   projects:
     title: Projects
     copy: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, itaque, vero minima corporis maiores suscipit quos sint perferendis incidunt eaque odit mollitia sapiente distinctio in recusandae vitae molestiae repellendus harum."
+  directors:
+    title: Directors
+    copy:
   contact:
   footer:
     company: La Raffinerie

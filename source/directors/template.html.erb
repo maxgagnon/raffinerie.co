@@ -1,0 +1,58 @@
+---
+title:
+---
+
+<section class="js-trigger-navigation" id="director-head" style="background-image: url('/<%= director.main_image.url %>')">
+</section>
+
+<section id="director-brief">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-2">
+        <%= image_tag(director.profile.url, class: 'img-responsive director-profile-image',  alt: director.profile.title) %>
+      </div>
+
+      <div class="col-md-10">
+        <h2><%= director.name %></h2>
+        <p><%= director.description %></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="director-media">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+
+        <% director.videos.each do |video| %>
+          <article>
+            <h4><%= video.title %></h4>
+            <div class="media fitvids">
+              <iframe src="//player.vimeo.com/video/<%= video.id %>?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <p><%= video.description %></p>
+          </article>
+        <% end %>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="hidden">
+  <div class="container">
+
+    <ul class="pager">
+      <li class="previous"><a href="#">&larr; <%= t('pagination.previous') %></a></li>
+      <li class="next"><a href="#"><%= t('pagination.next') %> &rarr;</a></li>
+    </ul>
+
+  </div>
+</section>

@@ -1,0 +1,27 @@
+<section id="<%= t('header.navigation.directors_fragment') %>">
+
+  <% elements = data.directors.map { |k, v| v.merge({ type: :director, slug: k }) } %>
+  <% elements.keep_if { |e| e.published } %>
+  <% elements.sort! { |a, b| (Date.parse(a['created_at']) < Date.parse(b['created_at'])) ? 1 : -1 } %>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 director">
+        <h3><%= t('directors.title') %></h3>
+      </div>
+
+      <% elements.each do |director| %>
+        <div class="col-md-4 director">
+          <% link_to "realisateurs/#{slugify(director[:slug])}" do %>
+            <div class="thumbnail">
+              <%= image_tag(director.thumbnail.url, alt: director.thumbnail.title) %>
+            </div>
+          <% end %>
+
+          <h5><%= director.name %></h5>
+          <p><%= director.short_description %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</section>
