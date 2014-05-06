@@ -6,6 +6,7 @@ gem 'middleman', '~> 3.3.2'
 gem 'middleman-imageoptim'
 gem 'middleman-sync'
 
+gem 'activesupport'
 gem 'dotenv'
 gem 'bootstrap-sass', :require => false
 

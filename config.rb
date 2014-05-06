@@ -1,6 +1,8 @@
 require 'dotenv'
 Dotenv.load
 
+require 'active_support/core_ext'
+
 ###
 # Compass
 ###
