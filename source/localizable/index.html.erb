@@ -8,4 +8,6 @@ title: La Raffinerie
 
 <%= partial "localizable/projects" %>
 
-<%= partial "localizable/directors" %>
+<% if data.try(:directors) && data.directors.any? { |d| d[1]['published'] } %>
+  <%= partial "localizable/directors" %>
+<% end %>

@@ -18,9 +18,11 @@
         <li>
           <%= link_to t('header.navigation.projects'), '/', fragment: t('header.navigation.projects_fragment') %>
         </li>
-        <li>
-          <%= link_to t('header.navigation.directors'), '/', fragment: t('header.navigation.directors_fragment') %>
-        </li>
+        <% if data.try(:directors) && data.directors.any? { |d| d[1]['published'] } %>
+          <li>
+            <%= link_to t('header.navigation.directors'), '/', fragment: t('header.navigation.directors_fragment') %>
+          </li>
+        <% end %>
         <li>
           <%= link_to t('header.navigation.contact'), '/', fragment: t('header.navigation.contact_fragment') %>
         </li>

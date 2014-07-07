@@ -75,8 +75,10 @@ data.projects.keys.each do |slug|
   proxy("/projets/#{slugify(slug)}.html", "/projects/template.html", locals: { project: data.projects[slug] }, ignore: true)
 end
 
-data.directors.keys.each do |slug|
-  proxy("/realisateurs/#{slugify(slug)}.html", "/directors/template.html", locals: { director: data.directors[slug] }, ignore: true)
+if data.try(:directors)
+  data.directors.keys.each do |slug|
+    proxy("/realisateurs/#{slugify(slug)}.html", "/directors/template.html", locals: { director: data.directors[slug] }, ignore: true)
+  end
 end
 
 set :css_dir, 'stylesheets'

@@ -10,7 +10,7 @@ title:
 
     <div class="row">
       <div class="col-md-2">
-        <%= image_tag(director.profile.url, class: 'img-responsive director-profile-image',  alt: director.profile.title) %>
+        <%= image_tag(director.thumbnail.url, class: 'img-responsive director-profile-image',  alt: director.thumbnail.title) %>
       </div>
 
       <div class="col-md-10">
@@ -29,14 +29,16 @@ title:
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
 
-        <% director.videos.each do |video| %>
-          <article>
-            <h4><%= video.title %></h4>
-            <div class="media fitvids">
-              <iframe src="//player.vimeo.com/video/<%= video.id %>?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            </div>
-            <p><%= video.description %></p>
-          </article>
+        <% if director.videos.try(:any?) %>
+          <% director.videos.each do |video| %>
+            <article>
+              <h4><%= video.title %></h4>
+              <div class="media fitvids">
+                <iframe src="//player.vimeo.com/video/<%= video.id %>?title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+              <p><%= video.description %></p>
+            </article>
+          <% end %>
         <% end %>
 
       </div>
