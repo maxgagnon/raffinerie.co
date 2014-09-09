@@ -5,5 +5,5 @@ $(window).on('scroll', function(e) {
 function parallax() {
   var scrolled = $(window).scrollTop();
 
-  $('#masthead').css('background-position', ['0px', -(scrolled * 0.3) + 'px'].join(' '));
+  $('#masthead').css('background-position', ['50%', -(scrolled * 0.3) + 'px'].join(' '));
 }
