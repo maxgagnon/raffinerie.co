@@ -1,5 +1,10 @@
 ---
 fr:
+  meta:
+    title: La Raffinerie
+    description: La Raffinerie est spécialisée dans le processus d’épuration d’idée.
+    image:
+      url: images/facebook-icon.jpg
   pagination:
     previous: Précédent
     next: Suivant
