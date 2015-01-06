@@ -18,7 +18,10 @@
       <meta property="og:title" content="<%= current_page.metadata[:locals][:project][:title] %>" />
       <meta property="og:url" content="<%= URI.join('http://laraffinerie.co', current_page.url).to_s %>" />
       <meta property="og:description" content="<%= current_page.metadata[:locals][:project][:description] %>" />
-      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co', current_page.metadata[:locals][:project][:thumbnail][:url]).to_s %>" />
+
+      <% # TODO: Output cache busting asset path %>
+      <%# image_path(URI.join('http://laraffinerie.co', current_page.metadata[:locals][:project][:thumbnail][:url]).to_s) %>
+      <meta property="og:image" content="<%= image_path(URI.join('http://laraffinerie.co', t('meta.image.url')).to_s) %>" />
     <% else %>
       <link rel="canonical" href="http://laraffinerie.co" />
 
@@ -29,7 +32,7 @@
       <meta property="og:title" content="<%= t('meta.title') %>" />
       <meta property="og:url" content="http://laraffinerie.co" />
       <meta property="og:description" content="<%= t('meta.description') %>" />
-      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co', t('meta.image.url')).to_s %>" />
+      <meta property="og:image" content="<%= image_path(URI.join('http://laraffinerie.co', t('meta.image.url')).to_s) %>" />
     <% end %>
 
     <meta property="og:site_name" content="La Raffinerie" />
