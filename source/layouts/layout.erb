@@ -9,27 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <% if current_page.metadata[:locals][:project] %>
-      <link rel="canonical" href="<%= URI.join('http://laraffinerie.co/', current_page.path).to_s %>" />
+      <link rel="canonical" href="<%= URI.join('http://laraffinerie.co', current_page.url).to_s %>" />
 
       <title><%= [t('meta.title'), current_page.metadata[:locals][:project][:title]].join(' - ') %></title>
 
       <meta name="description" content="<%= current_page.metadata[:locals][:project][:description] %>">
 
       <meta property="og:title" content="<%= current_page.metadata[:locals][:project][:title] %>" />
-      <meta property="og:url" content="<%= URI.join('http://laraffinerie.co', current_page.path).to_s %>" />
+      <meta property="og:url" content="<%= URI.join('http://laraffinerie.co', current_page.url).to_s %>" />
       <meta property="og:description" content="<%= current_page.metadata[:locals][:project][:description] %>" />
-      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co/', current_page.metadata[:locals][:project][:thumbnail][:url]).to_s %>" />
+      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co', current_page.metadata[:locals][:project][:thumbnail][:url]).to_s %>" />
     <% else %>
-      <link rel="canonical" href="http://laraffinerie.co/" />
+      <link rel="canonical" href="http://laraffinerie.co" />
 
       <title><%= t('meta.title') %></title>
 
       <meta name="description" content="<%= t('meta.description') %>">
 
       <meta property="og:title" content="<%= t('meta.title') %>" />
-      <meta property="og:url" content="http://laraffinerie.co/" />
+      <meta property="og:url" content="http://laraffinerie.co" />
       <meta property="og:description" content="<%= t('meta.description') %>" />
-      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co/', t('meta.image.url')).to_s %>" />
+      <meta property="og:image" content="<%= URI.join('http://laraffinerie.co', t('meta.image.url')).to_s %>" />
     <% end %>
 
     <meta property="og:site_name" content="La Raffinerie" />
